@@ -1,5 +1,7 @@
-class ReaderController < ApplicationController
+class ReadersController < ApplicationController
+    # readers index route
     get '/readers' do
-        "Hello Readers"
+        readers = Reader.all
+        readers.to_json
     end
 end

@@ -12,6 +12,6 @@ end
 use Rack::JSONBodyParser
 
 # Our application
-use BookController
-use ReaderController
+use BooksController
+use ReadersController
 run ApplicationController

@@ -1,4 +1,4 @@
-class BookController < ApplicationController
+class BooksController < ApplicationController
     get '/books' do
         "Hello World"
     end
