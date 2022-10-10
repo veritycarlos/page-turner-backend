@@ -1,5 +1,7 @@
 class BooksController < ApplicationController
+    # index route
     get '/books' do
-        "Hello World"
+        books = Book.all
+        books.to_json(include)
     end
 end
