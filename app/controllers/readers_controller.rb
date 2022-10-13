@@ -38,14 +38,14 @@ class ReadersController < ApplicationController
     #restfull routes are the routs like get "/authors" returns bla, bla, bla those are the routes. they are more like a combo of the crud and the actual route path. 
     # crud create read update destroy is about the request like get, post, patch, delete
     # Could also do reader = Reader.find_by(id: params[:id]) find by works w/ both stirngs and int
-    get '/readers/:id' do
-        reader = Reader.find_by(params["id"])
-    #     if reader 
-            reader.to_json(include: :books)
-    #     else 
-    #         "404 - Reader not found"
-    #     end 
-    end
+    # get '/readers/:id' do
+    #     reader = Reader.find_by(params["id"])
+    # #     if reader 
+    #         reader.to_json(include: :books)
+    # #     else 
+    # #         "404 - Reader not found"
+    # #     end 
+    # end
 
     patch "/readers/:id" do
         
