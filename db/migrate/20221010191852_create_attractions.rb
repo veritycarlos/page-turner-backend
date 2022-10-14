@@ -2,7 +2,7 @@ class CreateAttractions < ActiveRecord::Migration[6.1]
   def change
     create_table :attractions do |t|
       t.string :name
-      t.string :type
+      t.string :category
       t.string :photo
       t.string :address
       t.string :phone
@@ -10,11 +10,10 @@ class CreateAttractions < ActiveRecord::Migration[6.1]
       t.string :region
       t.string :season
       t.string :price
-      t.string :durration
+      t.string :duration
       t.text :description
       t.text :details
-      t.integer :reader_id
-      t.timestamps
+      t.integer :place_id
     end 
   end
 end

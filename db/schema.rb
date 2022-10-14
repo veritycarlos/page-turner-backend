@@ -12,15 +12,24 @@
 
 ActiveRecord::Schema.define(version: 2022_10_10_191852) do
 
-  create_table "books", force: :cascade do |t|
-    t.string "title"
-    t.string "author"
-    t.string "level"
-    t.integer "reader_id"
+  create_table "attractions", force: :cascade do |t|
+    t.string "name"
+    t.string "category"
+    t.string "photo"
+    t.string "address"
+    t.string "phone"
+    t.string "website"
+    t.string "region"
+    t.string "season"
+    t.string "price"
+    t.string "duration"
+    t.text "description"
+    t.text "details"
+    t.integer "place_id"
   end
 
-  create_table "readers", force: :cascade do |t|
-    t.string "name"
+  create_table "places", force: :cascade do |t|
+    t.string "city"
   end
 
 end

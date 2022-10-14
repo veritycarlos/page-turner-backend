@@ -8,6 +8,6 @@
 class Place < ActiveRecord::Base
     has_many :attractions, dependent: :destroy
 
-    validates :name, presence: true
+    validates :city, presence: true
 
 end
