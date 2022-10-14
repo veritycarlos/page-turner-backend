@@ -5,8 +5,9 @@
 # if you tried to add a duplicate name it would say id:nil it didn't save, but wouldn't say why, if you want to see why, you could type: reader.errors.full_messages, and it will tell you why
 # ^you would type and see the messages in rake console/pry and also save ex: reader = _ , to see the messages, you could also write reader.valid? or reader.saved and it will say false beccause there was a validation issue. )
 
-class Reader < ActiveRecord::Base
-    has_many :books, dependent: :destroy
+class Place < ActiveRecord::Base
+    has_many :attractions, dependent: :destroy
 
     validates :name, presence: true
+
 end
